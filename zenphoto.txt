@@ -1,0 +1,29 @@
+{{AFC submission|t||ts=20120729225015|u=Sankeytm|ns=5}} <!--- Important, do not remove this line before article has been created. --->
+
+{{Infobox software
+| name = Zenphoto
+| logo = [[Image:Zenphoto_logo.png]]
+| latest_release_version = 1.4.3
+| latest_release_date = {{release date and age|2012|07|01}}
+| operating_system = [[Cross-platform]]
+| genre = [[Online gallery]]
+| license = [[GPLv2]]
+| website = [http://www.zenphoto.org/ www.zenphoto.org]
+}}
+
+'''Zenphoto''' is an [[open source]] [[PHP]] photo gallery. FIXME.
+
+== Features ==
+
+FIXME.
+
+== WordPress Plugin ==
+[http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery] is a plugin for [[WordPress]] that "uses Zenphoto to include images and galleries in WordPress posts without database or local file access to Zenphoto." <ref>[http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery plugin for WordPress]</ref> 
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.zenphoto.org/ Zenphoto home page]
+* [http://www.makeuseof.com/tag/zenphoto-mighty-powerful-photoblog-engine-website/ Zenphoto – A Mighty Powerful Photoblog Engine For Your Website]
+

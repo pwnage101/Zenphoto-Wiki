@@ -11,19 +11,156 @@
 | website = [http://www.zenphoto.org/ www.zenphoto.org]
 }}
 
-'''Zenphoto''' is an [[open source]] [[PHP]] photo gallery. FIXME.
+
+
+'''Zenphoto''' is a standalone [[Content Management System]] (CMS) for multimedia-focused websites. It features support for images, video and audio documents, and the Zenpage plugin (included) provides a fully integrated way to integrate pages of information and news. One may therefore run an entire website with Zenphoto.
+
+
+
+== History ==
+Zenphoto was initially created by Tristan Harward in May 2005 after several articles were posted on weblogs citing the need for a better photo gallery solution. Development of the first version moved swiftly and was driven by user comments on Harward's weblog at [http://www.trisweb.com/category/zenphoto www.trisweb.com]. Zenphoto 0.8 was released on September 15, 2005 and the project has since been in active development. It is an open-source community project and openly solicits contributions.<ref>http://www.zenphoto.org/pages/get-involved</ref>
+
+
 
 == Features ==
 
-FIXME.
+=== Gallery of Images and Documents ===
+Albums are used to classify images, multimedia documents and other documents. They have the following features:
+* Albums contain subalbums, images and multimedia documents
+* Documents may be uploaded via FTP or the web interface (HTTP, jQuery or Flash), either as individual documents or as a zip file
+* Images and multimedia documents may be ordered by name, date, or a [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/album-image-sorting.jpg.php custom order]
+* Administrative interface can be used to rename albums, add descriptions and tags, and handle [http://www.zenphoto.org/screenshots/zenphoto-1.4.2-admin/album-edit.jpg.php user rights]
+* Descriptions may be multilingual
+* Management of multiple users with different rights (upload, view, download, comment, etc.)
+* Albums and documents may be published or unpublished
+
+In addition to regular (static) albums, [http://www.zenphoto.org/news/how-to-use-the-dynamic-albums-feature dynamic albums] may be created with tags or search criteria.
+
+==== Images: Photos and Illustrations ====
+* File types: jpg, bmp, gif, png, tif
+* Automatic thumbnails, resizing, rotation
+* On-the-fly [http://www.zenphoto.org/screenshots/zenphoto-1.4.2-admin/images-customthumbcrop.jpg.php custom cropping]
+* Automatic watermarking
+* Photos may be viewed as a slide show
+* Photos may be downloaded, dependent on [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/user-account.jpg.php user rights]
+* [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/album-images-edit.jpg.php Administrative interface] can be used to add descriptions and [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/tag-management.jpg.php tags (keywords)], etc.
+* [[EXIF]] and [[IPTC]] support
+* Support for [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/comments.jpg.php comments]
+
+==== Multimedia Documents ====
+* File types: fla, flv, mov, mp3, m4v/m4am, mp4, 3gp
+* Image preview available for video documents
+* Multimedia content displayed with jplayer or Flowplayer plugins (included)
+* Administrative interface can be used to add descriptions and keywords, etc.
+
+==== Other Documents ====
+* File types: PDF, and other documents (no preview)
+* The class-WEBdocs plugin (supplied) allows handling of PDF, Powerpoint and tiff files through the browser, GoogleDocs, Zoho or a local program
+* The class-AnyFile plugin (supplied) allows management of other files (without rendering)
+
+=== Zenpage: A Content Management Plugin ===
+Although officially a [http://www.zenphoto.org/news/zenpage-a-cms-plugin-for-zenphoto plugin], its functions are fully integrated in Zenphoto. It supports two types of documents: [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/zenpage-page-edit.jpg.php pages] and [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/zenpagenews-articles.jpg.php news]. Both document types may include text and images. They can be used to create blog-like entries, explanation pages, etc. 
+
+The features provided in the Zenpage extension are comprehensive enough to allow one to run an entire website solely with Zenphoto.
+
+==== Highlights ====
+* Text may be formatted with different heading levels, indents, bullets, etc.
+* Images from the albums as well as outside images may be added.
+* '''News''' are classified by category.
+* '''Pages''' and '''News''' may have a publication date and an expiration date.
+* Pages may be commented. 
+
+
+
+== Technical Description ==
+
+=== Requirements ===
+Zenphoto 1.4.3.x [http://www.zenphoto.org/news/installation-and-upgrading#server-requirements requires]:
+* Apache server (it may work with other server systems like IIs or Lighttpd)
+* [[PHP]] 5.2 + (PHP 5.3 + preferred; most functions work with PHP 5.0)
+* One of these graphic libraries: [[GD Graphics Library]], or [[Imagick]] graphics library 6.3.8 / Imagick 2.1.0
+* [[MySQL]] 5.5 + (works with MySQL 5.0 +)
+
+=== User Management ===
+* User management handled locally, or though federated logon ([[OpenID]] and others)
+* [http://www.zenphoto.org/screenshots/zenphoto-1.4.2-admin/user-admin.jpg.php User rights] may be configured for each album. They include: 
+: * view albums in whole or in part,
+: * view or download full-size images,
+: * post comments,
+: * upload images and other documents,
+: * select of modify themes.
+
+=== Visual Aspect and Customization of the Gallery ===
+* Five supplied and many third-party [http://www.zenphoto.org/theme/ themes] allow the website manager to fully customize the visual aspect of the albums and pages. Besides that, with knowledge of CSS and HTML, one may design a [http://www.zenphoto.org/news/theming-tutorial custom theme] for a truly one-of-a-kind gallery. Not all themes support the Zenpage plugin.
+* Some themes are well-suited to portable devices.
+* Separate themes may be chosen for each album.
+* Third-party [http://www.zenphoto.org/news/category/extensions extensions] allow further possibilities.
+
+=== Linguistic Choices ===
+* Administrative interface available in [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/user-account.jpg.php many languages]. Each administrator may select their own language.
+* Viewing also available in many languages, with language either selected by the user or through the browser default. Some themes do not fully support multiple languages. 
+* Multilingual support for content.
+
+
+
+== Sample Galleries ==
+* [http://www.zenphoto.org/showcase/ Zenphoto Showcase]
+
+==== A Few Galleries that use the Zenpage Plugin ====
+* [http://www.zenphoto.org zenphoto.org]: except for the forum, its entire website is powered by Zenphoto
+* [http://www.vincentbourganel.fr Vincent Bourganel's Gallery]: full use of Zenpage features
+* [http://www.kamphotog.com/ Kam’s Photos – Les photos de Kam]: by Karim Amrani
+* [http://peep.org/fotos/ Peep Fotos]: by Michael Kay
+* [http://www.heike-wiechmann.de Keike Wiechmann]
+* [http://www.varagine.it Varagine.it]: Photographic and Historical Archive of the city of Varazze]
+
+==== Galleries that integrate transparently Zenphoto in an entire website ====
+* [http://fxtaxil.com/ F-X Taxil]: gallery powered by Zenphoto, integrated in a [[Wordpress]] website
+* [http://stjamestheapostle.ca/photos/ St. James the Apostle Anglican Church]: gallery powered by Zenphoto, integrated in a hard-coded php/html website
+* [http://www.warrendiggles.com Warren Diggles Photography Web Design]
+* [http://www.musikverein-zunsweier.de Musikverein Zunsweier]: Zenphoto integrated in a php website
+
+
 
 == WordPress Plugin ==
 [http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery] is a plugin for [[WordPress]] that "uses Zenphoto to include images and galleries in WordPress posts without database or local file access to Zenphoto." <ref>[http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery plugin for WordPress]</ref> 
 
+
+
+== See also ==
+* [[Comparison of photo gallery software]]
+
+
+
 == References ==
 {{reflist}}
 
+
+
 == External links ==
-* [http://www.zenphoto.org/ Zenphoto home page]
+* [http://www.zenphoto.org Zenphoto's Official website]
+* [http://www.zenphoto.org/support Zenphoto's own support forum]
+* [http://www.opensourcecms.com/scripts/details.php?name=Zenphoto&scriptid=150 Zenphoto Demosite] on OpensourceCMS
 * [http://www.makeuseof.com/tag/zenphoto-mighty-powerful-photoblog-engine-website/ Zenphoto – A Mighty Powerful Photoblog Engine For Your Website]
+* [http://www.zenbien.com/category/zenphoto Information and discussion on Zenphoto] (in French)
+* [http://www.zenbien.com/infos/ Zenphoto forum on Zenbien] (in French)
+* [http://www.makeuseof.com/tag/zenphoto-mighty-powerful-photoblog-engine-website/ Zenphoto – A Mighty Powerful Photoblog Engine for your Website]
+* [http://www.makeuseof.com/tag/share-photos-zenphoto-zenpage-cms-plugin/ Share more than just photos with Zenphoto & the Zenpage CMS Plugin]
+* [http://www.focus-numerique.com/tutoriel-creer-sa-galerie-photo-ligne-zenphoto-news-2412.html Tutoriel : créer sa galerie photo en ligne avec Zenphoto] (in French – Tutorial: creating one's online photo gallery with Zenphoto)
+* [http://www.techtangerine.com/2012/01/15/piwigo-and-zenphoto-a-comparative-review/ Piwigo and Zenphoto; a Comparative Review] (based on version 1.4.1.6)
+* [http://www.cmsdesignresource.com/cms-reviews/zenphoto/ Zenphoto review] on CMS Design Resource (based on version 1.2.4)
+* [http://www.drweb.de/magazin/zenphoto-%E2%80%93-einfache-galleriesoftware/ Zenphoto – Einfache Galeriesoftware] (in German – Zenphoto – Easy Gallery Software)
+* [http://www.zenphoto.org/screenshots/screencasts/ A bunch of Youtube videos]: tutorials, evaluations, etc.
+
+[[Category:Free image galleries]]
+[[Category:Free photo software]]
+[[Category:Image galleries]]
+[[Category:Photo software]]
+[[Category:Free content management systems]]
+[[Category:Content management systems]]
+[[Category:Website management]]
+[[Category:Free software programmed in PHP]]
+[[Category:PHP programming language]]
+
+[[es:Zenphoto]]
 

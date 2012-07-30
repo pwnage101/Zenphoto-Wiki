@@ -11,16 +11,10 @@
 | website = [http://www.zenphoto.org/ www.zenphoto.org]
 }}
 
-
-
 '''Zenphoto''' is a standalone [[Content Management System]] (CMS) for multimedia-focused websites. It features support for images, video and audio documents, and the Zenpage plugin (included) provides a fully integrated way to integrate pages of information and news. One may therefore run an entire website with Zenphoto.
-
-
 
 == History ==
 Zenphoto was initially created by Tristan Harward in May 2005 after several articles were posted on weblogs citing the need for a better photo gallery solution. Development of the first version moved swiftly and was driven by user comments on Harward's weblog at [http://www.trisweb.com/category/zenphoto www.trisweb.com]. Zenphoto 0.8 was released on September 15, 2005 and the project has since been in active development. It is an open-source community project and openly solicits contributions.<ref>http://www.zenphoto.org/pages/get-involved</ref>
-
-
 
 == Features ==
 
@@ -70,8 +64,6 @@ The features provided in the Zenpage extension are comprehensive enough to allow
 * '''Pages''' and '''News''' may have a publication date and an expiration date.
 * Pages may be commented. 
 
-
-
 == Technical Description ==
 
 === Requirements ===
@@ -101,8 +93,6 @@ Zenphoto 1.4.3.x [http://www.zenphoto.org/news/installation-and-upgrading#server
 * Viewing also available in many languages, with language either selected by the user or through the browser default. Some themes do not fully support multiple languages. 
 * Multilingual support for content.
 
-
-
 == Sample Galleries ==
 * [http://www.zenphoto.org/showcase/ Zenphoto Showcase]
 
@@ -120,22 +110,14 @@ Zenphoto 1.4.3.x [http://www.zenphoto.org/news/installation-and-upgrading#server
 * [http://www.warrendiggles.com Warren Diggles Photography Web Design]
 * [http://www.musikverein-zunsweier.de Musikverein Zunsweier]: Zenphoto integrated in a php website
 
-
-
 == WordPress Plugin ==
 [http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery] is a plugin for [[WordPress]] that "uses Zenphoto to include images and galleries in WordPress posts without database or local file access to Zenphoto." <ref>[http://wordpress.org/extend/plugins/zenphoto-gallery/ Zenphoto Gallery plugin for WordPress]</ref> 
-
-
 
 == See also ==
 * [[Comparison of photo gallery software]]
 
-
-
 == References ==
 {{reflist}}
-
-
 
 == External links ==
 * [http://www.zenphoto.org Zenphoto's Official website]

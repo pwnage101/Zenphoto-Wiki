@@ -2,7 +2,7 @@
 
 {{Infobox software
 | name = Zenphoto
-| logo = [[Image:Zenphoto_logo.png]]
+| logo = [[Image:Zenphoto_logo.png|230px]]
 | latest_release_version = 1.4.3
 | latest_release_date = {{release date and age|2012|07|01}}
 | operating_system = [[Cross-platform]]
@@ -16,24 +16,28 @@
 Zenphoto is an open-source community project and openly solicits contributions.<ref>http://www.zenphoto.org/pages/get-involved</ref>
 
 == History ==
-Zenphoto was initially created by Tristan Harward in May 2005 after several articles were posted on weblogs citing the need for a better photo gallery solution. Development of the first version was driven by user comments on Harward's weblog at [http://www.trisweb.com/ www.trisweb.com] where a Zenphoto specification was published and revised. Zenphoto 0.8 was released on September 15, 2005 and the project has since been in active development.
+Zenphoto was initially created by Tristan Harward in May 2005 after several articles were posted on weblogs citing the need for a better photo gallery solution. Development of the first version was driven by user comments on Harward's weblog at [http://www.trisweb.com/ www.trisweb.com] where a Zenphoto specification was published and revised. Zenphoto 0.8 was released on September 15, 2005.
+
+In 2007 the community began development, adding many new features and bugfixes. Consequently, Zenphoto 1.1 was released in September 2007 and it has since been actively developed by the community.
+
+A more detailed history is available at [http://www.zenphoto.org/pages/development www.zenphoto.org/pages/development].
 
 == Features ==
 === Albums ===
-* Albums may contain subalbums, different types of documents (images, multimedia documents and other files)
-* Albums and documents may be published or unpublished, made public or private
-* In addition to regular (static) albums, [http://www.zenphoto.org/news/how-to-use-the-dynamic-albums-feature dynamic albums] may be created with tags or search criteria.
+* Albums may contain subalbums and items (images, multimedia documents and other files)
+* Albums and items may be published or unpublished, made public or private
+* In addition to regular (static) albums, [http://www.zenphoto.org/news/how-to-use-the-dynamic-albums-feature dynamic albums] may be created with tags or search criteria
 
-=== Documents ===
-Documents may be images, multimedia documents or other files.
+=== Items ===
+Items may be images, multimedia documents or other files.
 
-* Uploading via FTP or the web interface (HTTP, jQuery or Flash), either as individual documents or a zip file.
-* [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/album-images-edit.jpg.php Administrative interface] can be used to name, add descriptions and [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/tag-management.jpg.php tags (keywords)], etc.
-* Support for [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/comments.jpg.php comments]
+* Uploading via FTP or the web interface (HTTP, jQuery or Flash), either as individual files or a zip file
+* [http://www.zenphoto.org/screenshots/zenphoto-admin/album-images-edit.jpg.php Administrative interface] can be used to name, add descriptions and [http://www.zenphoto.org/screenshots/zenphoto-admin/tag-management.jpg.php tags (keywords)], etc.
+* Support for [http://www.zenphoto.org/screenshots/zenphoto-admin/comments.jpg.php comments]
 
 {| class="wikitable"
 ;
-! Type
+! Item type
 ! Supported formats
 ! Notes
 |-
@@ -41,12 +45,12 @@ Documents may be images, multimedia documents or other files.
 | jpg, bmp, gif, png, tif
 |
 * Automatic thumbnails, resizing, rotation
-* On-the-fly [http://www.zenphoto.org/screenshots/zenphoto-1.4.2-admin/images-customthumbcrop.jpg.php custom cropping]
+* On-the-fly [http://www.zenphoto.org/screenshots/legacy-admin/zenphoto-1.4.2-admin/images-customthumbcrop.jpg.php custom cropping]
 * Automatic watermarking
 * [[EXIF]] and [[IPTC]] support
 |-
 | Multimedia
-| fla, flv, mov, mp3, m4v/m4am, mp4, 3gp
+| ogg, webm, fla, flv, mov, mp3, m4v/m4am, mp4, 3gp
 |
 * Image preview available for video
 * Multimedia content displayed with [[jPlayer]] or [[Flowplayer]] plugins (included)
@@ -56,13 +60,13 @@ Documents may be images, multimedia documents or other files.
 |
 * Files are either downloaded, managed locally or handled by a WEBdocs provider.
 |-
-| Zenpage ([http://www.zenphoto.org/news/zenpage-a-cms-plugin-for-zenphoto plugin])
-| [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/zenpage-page-edit.jpg.php pages] and [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/zenpagenews-articles.jpg.php news]
+| [http://www.zenphoto.org/news/zenpage_-_a_cms_plugin_for_zenphoto Zenpage]
+| [http://www.zenphoto.org/screenshots/zenphoto-admin/zenpage-page-edit.jpg.php pages] and [http://www.zenphoto.org/screenshots/zenphoto-admin/zenpagenews-articles.jpg.php news]
 |
 * Can be used to create blog-like entries, explanation pages, etc.
-* Text may be formatted with different heading levels, indents, bullets, etc
+* Text may be formatted with different heading levels, indents, bullets, etc.
 * Images from the albums as well as external images may be added
-* '''News''' is classified by category
+* '''News''' is classified by [http://www.zenphoto.org/screenshots/zenphoto-admin/zenpage-news-categories.jpg.php category]
 * Both document types can have a publication date and an expiration date
 |}
 
@@ -70,23 +74,23 @@ Documents may be images, multimedia documents or other files.
 === Requirements ===
 Zenphoto 1.4.3.x [http://www.zenphoto.org/news/installation-and-upgrading#server-requirements requires]:
 * Apache server (it may work with other server systems like IIs or Lighttpd)
-* [[PHP]] 5.2 + (PHP 5.3 + preferred; most functions work with PHP 5.0)
+* [[PHP]] 5.2+ (PHP 5.3+ recommended; most functions work with PHP 5.0)
 * One of these graphic libraries: [[GD Graphics Library]], or [[Imagick]] graphics library 6.3.8 / Imagick 2.1.0
-* [[MySQL]] 5.5 + (works with MySQL 5.0 +)
+* [[MySQL]] 5.0+ (MySQL 5.5+ recommended)
 
 === User Management ===
 * User management handled locally, or though federated logon ([[OpenID]] and others)
 * [http://www.zenphoto.org/news/an-overview-of-zenphoto-users User rights] may be configured for each album
 
 === Visual Aspect and Customization of the Gallery ===
-* Five supplied and many third-party [http://www.zenphoto.org/theme/ themes] (not all themes support the Zenpage plugin)
-* [http://www.zenphoto.org/news/theming-tutorial Custom themes] can be designed using HTML and CSS.
+* Six supplied, and many third-party [http://www.zenphoto.org/theme/ themes] (not all themes support the Zenpage plugin)
+* [http://www.zenphoto.org/news/theming-tutorial Custom themes] can be designed using HTML and CSS
 * Separate themes may be chosen for each album
 * Third-party [http://www.zenphoto.org/news/category/extensions extensions]
 
 === Linguistic Choices ===
-* Administrative interface available in [http://www.zenphoto.org/screenshots/zenphoto-1.4.3-admin/user-account.jpg.php many languages]. Each administrator may select their own language.
-* Multilingual support, both for user content (album and image descriptions) and interface.
+* Administrative interface available in [http://www.zenphoto.org/screenshots/zenphoto-admin/user-account.jpg.php many languages]. Each administrator may select their own language
+* Multilingual support, both for user content (album and image descriptions) and interface
 
 == Sample Galleries ==
 * [http://www.zenphoto.org/showcase/ Zenphoto Showcase]
